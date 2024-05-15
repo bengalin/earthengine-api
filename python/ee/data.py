@@ -2102,8 +2102,7 @@ def setAssetAcl(assetId: str, aclUpdate: Union[str, Dict[str, Any]]) -> None:
 
   Args:
     assetId: The ID of the asset to set the ACL on.
-    aclUpdate: The updated ACL for the asset. Must be formatted like the
-        value returned by getAssetAcl but without "owners".
+    aclUpdate: The updated ACL.
   """
   # The ACL may be a string by the time it gets to us. Sigh.
   if isinstance(aclUpdate, str):
